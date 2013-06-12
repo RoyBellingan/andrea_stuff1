@@ -6,6 +6,9 @@ if(! $conn)
     exit();
 }
 mysql_select_db("studenti");
+echo "<pre>";
+print_r($_POST);
+echo "<pre>";
 $codice =$_POST["cod_materia"];
 $materia=$_POST["nome_materia"];
 include "modmaterieform.html";

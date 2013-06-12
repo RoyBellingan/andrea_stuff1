@@ -49,7 +49,7 @@
 <div style="width:300px;height:300px;float:left;">
 
 <?php
-$conn= mysql_connect("localhost","root", "prova");
+$conn= mysql_connect("localhost","studenti", "studenti");
 
 if(!$conn)
 {

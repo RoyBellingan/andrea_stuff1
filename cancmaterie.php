@@ -1,5 +1,5 @@
 <?php
-$conn = mysql_connect("localhost", "root", "prova");
+$conn = mysql_connect("localhost", "studenti", "studenti");
 if(! $conn)
 {
     echo ("errore connessione mysql");
@@ -25,8 +25,8 @@ else
 $descr=$riga[0];
 ?>
 <form name="cancella" method="post" action="cancmaterie1.php">
-	<input type="hidden" value="<? echo $codmat ?>" name="cod_materia">
-	Descrizione: <input type="text" value="<? echo $descr ?>" name="nome_materia"><br>
+	<input type="hidden" value="<?php echo $codmat ?>" name="cod_materia">
+	Descrizione: <input type="text" value="<?php echo $descr ?>" name="nome_materia"><br>
 	<input type="submit" value="cancella">
 </form>
 <?php
