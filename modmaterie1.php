@@ -1,5 +1,5 @@
 <?php
-$conn = mysql_connect("localhost", "root", "prova");
+$conn = mysql_connect("localhost", "studenti", "studenti");
 if(! $conn)
 {
     echo ("Errore durante la connessione a MySql.");
